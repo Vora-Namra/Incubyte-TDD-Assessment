@@ -3,16 +3,7 @@ function add(str) {
 
     const nums = str.split(",").map(num => parseInt(num));
 
-    if (nums.length === 1) {
-        return nums[0];
-    }
-    if (nums.length === 2) {
-        return nums[0] + nums[1];
-    }
-    
-
-    return 0;
-
+    return nums.reduce((sum, val) => sum + val, 0);
 }
 
 module.exports = add;
