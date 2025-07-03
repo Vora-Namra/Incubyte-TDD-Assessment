@@ -1,6 +1,7 @@
 function add(str) {
     if (str.trim() === "") return 0;
     const st = str.replace(/\t/g, ",");
+    const replaced2  = st.replace(/[:*]/g, ",");
     const trimmed = replaced2.replace(/\s+/g, ",");
 
     const nums = trimmed
