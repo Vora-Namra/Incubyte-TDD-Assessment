@@ -36,8 +36,11 @@ describe('StringCalc', () => {
     it('should return sum with custom tab delimiter', () => {
     expect(add("\t\n1\t2\t3")).toBe(6);
     });
-
-
-
+    it('should return sum with custom colon delimiter', () => {
+        expect(add("1:2:3")).toBe(6);
+    });
+    it('should return sum with custom asterisk delimiter', () => {
+        expect(add("1*2*3")).toBe(6);
+    });
 
 });
