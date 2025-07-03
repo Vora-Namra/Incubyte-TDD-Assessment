@@ -18,6 +18,12 @@ describe('StringCalc', () => {
     it('should return sum for multiple values', () => {
         expect(add("1,2,3,4")).toBe(10);
     });
+    it('should return sum for multiple values with spaces', () => {
+        expect(add("1, 2, 3, 4")).toBe(10);
+    });
+    it('should return sum for multiple values with \n', () => {
+        expect(add("1,2\n3,4,5")).toBe(15);
+    });
 
 
 });
