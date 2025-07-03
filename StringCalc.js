@@ -1,5 +1,7 @@
 function add(str){
-    return parseInt(str);
-        
-}
+    
+        const num = parseInt(str);
+            return num;
+    }
+
 module.exports = add;
