@@ -12,6 +12,9 @@ describe('StringCalc', () => {
     it('should return sum for two values', () => {
         expect(add("2,3")).toBe(5);
     });
+    it('should return sum for two values', () => {
+        expect(add("8,7")).toBe(15);
+    });
 
 
 });
