@@ -1,10 +1,10 @@
 function add(str) {
     if (str.trim() === "") return 0;
-
-    const trimmed = str.replace(/\n/g, ",");
+    const st = str.replace(/\t/g, ",");
+    const trimmed = st.replace(/\n/g, ",");
 
     const nums = trimmed
-        .split(",")
+        .split(/,+/)
         .map(num => num.trim())
         .filter(num => num !== "")
         .map(num => parseInt(num));

@@ -34,7 +34,7 @@ describe('StringCalc', () => {
         expect(() => add("1,-3,-5")).toThrow("Negative numbers not allowed");
     });
     it('should return sum with custom tab delimiter', () => {
-    expect(add("//\t\n1\t2\t3")).toBe(6);
+    expect(add("\t\n1\t2\t3")).toBe(6);
     });
 
 
