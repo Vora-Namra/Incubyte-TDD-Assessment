@@ -27,10 +27,10 @@ describe('StringCalc', () => {
     it('should return sum for multiple values with \n', () => {
         expect(add("1,2\n3\n4,5")).toBe(15);
     });
-    
-    it('should return sum for multiple values with \n', () => {
-        expect(add("//\\\n1\\2")).toBe(3);
+    it('should throw error for negative vals', () => {
+        expect(() => add("1,-3,5")).toThrow("Negative numbers not allowed");
     });
+
 
 
 });
