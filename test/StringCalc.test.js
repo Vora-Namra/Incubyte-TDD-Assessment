@@ -24,6 +24,13 @@ describe('StringCalc', () => {
     it('should return sum for multiple values with \n', () => {
         expect(add("1,2\n3,4,5")).toBe(15);
     });
+    it('should return sum for multiple values with \n', () => {
+        expect(add("1,2\n3\n4,5")).toBe(15);
+    });
+    
+    it('should return sum for multiple values with \n', () => {
+        expect(add("//\\\n1\\2")).toBe(3);
+    });
 
 
 });
