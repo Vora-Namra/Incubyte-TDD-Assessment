@@ -28,10 +28,10 @@ describe('add', () => {
         expect(add("1,2\n3\n4,5")).toBe(15);
     });
     it('should throw error for negative vals', () => {
-        expect(() => add("1,-3,5")).toThrow("Negative numbers not allowed");
+        expect(() => add("1,-3,5")).toThrow("Negative numbers not allowed -3");
     });
     it('should throw error for negative vals', () => {
-        expect(() => add("1,-3,-5")).toThrow("Negative numbers not allowed");
+        expect(() => add("1,-3,-5")).toThrow("Negative numbers not allowed -3,-5");
     });
     it('should return sum with custom tab delimiter', () => {
     expect(add("\t\n1\t2\t3")).toBe(6);
