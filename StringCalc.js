@@ -10,6 +10,7 @@ function add(str) {
     const nums = trimmed
         .split(/,+/)             
         .map(num => num.trim())  
+        .filter(num => num < 1000)
         .filter(num => num !== "")
         .map(num => parseInt(num));
 
