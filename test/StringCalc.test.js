@@ -1,7 +1,7 @@
 import {it,describe,expect} from 'vitest';
 import add from '../StringCalc.js';
 
-describe('StringCalc', () => {
+describe('add', () => {
     it('should return 0 for empty string', () => {
         expect(add("")).toBe(0);
     });
@@ -42,5 +42,19 @@ describe('StringCalc', () => {
     it('should return sum with custom asterisk delimiter', () => {
         expect(add("1*2*3")).toBe(6);
     });
-
+    it('should return sum with Random delimiter', () => {
+        expect(add("1|2|3&4)2nM2")).toBe(14);
+    });
+    it('should return sum with more random delis',()=>{
+        expect(add("//[***][;;][+++++]\n1***2+++++4;;1")).toBe(8);
+    })
+    it('should return sum with more random delis',()=>{
+        expect(add("//[***][;;][+++++]\n1***2+++++4;;1")).toBe(8);
+    });
+    it("should return 0 for only *** or ###",()=>{
+        expect(add("/'/***/###\\'")).toBe(0);
+    })
+    it("should throw error for non-string input", () => {
+        expect(() => add(123)).toThrow("Input must be a string");
+    });
 });

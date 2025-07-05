@@ -1,4 +1,7 @@
 function add(str) {
+    // if (typeof str !== "string") {
+    //     throw new Error("Input must be a string");
+    // }
     if (str.trim() === "") return 0;
 
     const trimmed = str.replace(/[^0-9\-]+/g, ","); 
