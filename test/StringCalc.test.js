@@ -63,4 +63,7 @@ describe('add', () => {
     it("should return 0 for string with only spaces", () => {
         expect(add("   ")).toBe(0);
     });
+    it("should ignore the number greater than 1000", () => {
+        expect(add("1001,2,3")).toBe(5);
+    });
 });
