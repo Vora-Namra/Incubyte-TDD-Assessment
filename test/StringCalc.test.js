@@ -60,4 +60,7 @@ describe('add', () => {
     it("should display multiple non-negative for input", () => {
         expect(() => add("-3,-5,-9")).toThrow("Negative numbers not allowed -3,-5,-9");
     });
+    it("should return 0 for string with only spaces", () => {
+        expect(add("   ")).toBe(0);
+    });
 });
