@@ -57,4 +57,7 @@ describe('add', () => {
     it("should throw error for non-string input", () => {
         expect(() => add(123)).toThrow("Input must be a string");
     });
+    it("should display multiple non-negative for input", () => {
+        expect(() => add("-3,-5,-9")).toThrow("Negative numbers not allowed -3,-5,-9");
+    });
 });
