@@ -1,3 +1,0 @@
-## Incubytes TDD Assessment 
-
-
