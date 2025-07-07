@@ -24,6 +24,8 @@ Implements a function `add(string)` that returns the **sum of numbers** in a str
   - Custom delimiters using `//[delimiter]\n`
 - Ignores numbers > 1000
 - Throws an error when negatives are passed, listing **all** negative values
+- Allows multiple custom delimiters like //[***][%%%][::]
+
 
 ---
 
